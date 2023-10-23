@@ -22,6 +22,7 @@ const welcomeMessages = {
   };
   
   // Create a function to check the welcome message for any violations
+// Create a function to check the welcome message for any violations
 function checkWelcomeMessage(message) {
     // TODO: Implement this function to check the welcome message for any violations of the safety guidelines
   
@@ -34,13 +35,13 @@ function checkWelcomeMessage(message) {
     // TODO: Implement this function to generate a creative welcome message for the given user
   
     // Return a creative welcome message
-    return `Welcome to the group, ${ctx.from.username}! We're glad to have you here!`;
+    return `Welcome to the group, ${user.username}! We're glad to have you here!`;
   }
   
   // Listen for the `new_chat_member` event
   bot.on('new_chat_member', async (ctx) => {
     // Get the new user's language code
-    const userLanguageCode = ctx.message.new_chat_member.languageCode;
+    const userLanguageCode = ctx.message.chat.languageCode;
   
     // If the new user's language code is not supported by the bot, use the default language code (English)
     const languageCode = welcomeMessages[userLanguageCode] ? userLanguageCode : 'en';
