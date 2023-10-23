@@ -5,22 +5,23 @@ const bot = new Telegraf(TOKEN);
 
 // Welcome messages
 const welcomeMessages = {
-  en: [
-    'Welcome, {ctx.from.username}!',
-    'Hey {ctx.from.username}, welcome to the party!',
-    'Glad to have you here, {ctx.from.username}!',
-    'Welcome to the best group on Telegram, {ctx.from.username}!',
-    'We\'re so excited to have you join us, {ctx.from.username}!',
-    'Welcome to the group, {ctx.from.username}! We\'re always looking for new members to add to the conversation.',
-    'We\'re glad you\'re here, {ctx.from.username}! We hope you\'ll find our group to be a valuable resource.',
-    'Welcome to the group, {ctx.from.username}! We\'re always looking for new members to help us grow the community.',
-    'We\'re excited to have you on board, {ctx.from.username}! We hope you\'ll share your knowledge and expertise with the group.',
-    'Welcome to the group, {ctx.from.username}! We\'re always looking for new members to contribute to the fun.',
-    'Welcome to the group, {ctx.from.username}! We\'re glad you\'re here to join in on the madness.',
-    'Welcome to the group, {ctx.from.username}! We hope you\'ll enjoy your time with us.',
-    'Welcome to the group, {ctx.from.username}! We\'re glad you\'re here to be a part of the family.',
-  ],
-};
+    en: [
+      'Welcome, {ctx.from.username}!',
+      'Hey {ctx.from.username}, welcome to the party!',
+      'Glad to have you here, {ctx.from.username}!',
+      'Welcome to the best group on Telegram, {ctx.from.username}!',
+      'We\'re so excited to have you join us, {ctx.from.username}!',
+      'Welcome to the group, {ctx.from.username}! We\'re always looking for new members to add to the conversation.',
+      'We\'re glad you\'re here, {ctx.from.username}! We hope you\'ll find our group to be a valuable resource.',
+      'Welcome to the group, {ctx.from.username}! We\'re always looking for new members to help us grow the community.',
+      'We\'re excited to have you on board, {ctx.from.username}! We hope you\'ll share your knowledge and expertise with the group.',
+      'Welcome to the group, {ctx.from.username}! We\'re always looking for new members to contribute to the fun.',
+      'Welcome to the group, {ctx.from.username}! We\'re glad you\'re here to join in on the madness.',
+      'Welcome to the group, {ctx.from.username}! We hope you\'ll enjoy your time with us.',
+      'Welcome to the group, {ctx.from.username}! We\'re glad you\'re here to be a part of the family.',
+    ],
+  };
+  
 
 // Check welcome message for safety violations
 function checkWelcomeMessage(message) {
